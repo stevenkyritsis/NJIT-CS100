@@ -76,9 +76,22 @@ xy = NameError: name 'xy' is not defined
 1116.5357142857144
 
 #3
->>> mile1 = 52+8.25
->>> mile2 = mile1 + 7.2
->>> print(mile2)
-67.45
+START_HR = 6
+START_MIN = 52
+StartTimeInSec = (6 * 3600)+ (52 * 60)
+
+TEMPO1Sec = 8 * 60 + 15
+TEMPO2Sec = 7 * 60 + 12
+
+SECONDS = 60
+MINUTES = 60
+
+FinalTimeSec = StartTimeInSec + ((2 * TEMPO1Sec)+ (3 * TEMPO2Sec))
+TimeMinutes = FinalTimeSec // SECONDS
+FinalTimeHour = TimeMinutes // MINUTES
+remainder = 1
+FinalTimeMinutes = TimeMinutes % 60
+
+print(FinalTimeHour, FinalTimeMinutes, FinalTimeSec)
 
 '''
