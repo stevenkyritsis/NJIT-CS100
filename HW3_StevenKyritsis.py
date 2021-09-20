@@ -1,3 +1,9 @@
+'''
+Steven Kyritsis CS100 
+2021F Section 031 HW 03,
+September 21, 2021
+'''
+
 import math
 import turtle
 
