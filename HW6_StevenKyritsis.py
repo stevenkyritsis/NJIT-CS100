@@ -16,9 +16,7 @@ def has_final_letter(str_list, letters):
 
 #1b
 print(has_final_letter(['apple', 'banana', 'orange'], 'aeiou'))
-
 print(has_final_letter(['racecar', 'paintball', 'skateboard'], 'aeiou'))
-
 print(has_final_letter(['horse', 'goat', 'harambe'], 'eiou'))
 
 #2a
@@ -31,3 +29,7 @@ def is_divisible(max_int, two_ints):
             d_list.append(i)
     return d_list
 
+#2b
+print(is_divisible(100, (2,10)))
+print(is_divisible(50, (4,5)))
+print(is_divisible(20, (2,3)))
