@@ -7,7 +7,6 @@ October 22, 2021
 #1a
 def has_final_letter(str_list, letters):
     result = []
-
     for item in str_list:
         if item[-1] in letters:
             result.append(item)
