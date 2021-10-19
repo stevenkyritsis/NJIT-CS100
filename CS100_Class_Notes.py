@@ -16,3 +16,5 @@ t.fd(200)
 t.color('papaya whip')
 t.circle(100)
 #123
+
+t.forward(100)
