@@ -23,5 +23,11 @@ print(has_final_letter(['horse', 'goat', 'harambe'], 'eiou'))
 
 #2a
 def is_divisible(max_int, two_ints):
+    d_list = []
+    num1 = two_ints[0]
+    num2 = two_ints[1]
     for i in range(1,max_int):
-        
+        if i % num1 == 0 and i % num2 == 0:
+            d_list.append(i)
+    return d_list
+
