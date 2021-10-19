@@ -1,7 +1,7 @@
 '''
 Steven Kyritsis CS100 
 2021F Section 031 HW 06,
-October 1, 2021
+October 22, 2021
 '''
 
 #1a
