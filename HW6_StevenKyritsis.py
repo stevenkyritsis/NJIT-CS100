@@ -14,6 +14,7 @@ def has_final_letter(str_list, letters):
     return result
 
 #1b
+
 print(has_final_letter(['apple', 'banana', 'orange'], 'aeiou'))
 print(has_final_letter(['racecar', 'paintball', 'skateboard'], 'aeiou'))
 print(has_final_letter(['horse', 'goat', 'harambe'], 'eiou'))
