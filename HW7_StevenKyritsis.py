@@ -10,7 +10,9 @@ comment after the code.
 '''
 
 '''
-PROBLEM 0. Put your name and assignment information here.
+Steven Kyritsis CS100 
+2021F Section 031 HW 07,
+October 29, 2021
 '''
 
 # The Bells
@@ -231,10 +233,10 @@ def litCricFriend(wordList, text):
     # which is imported above, contains a constant named punctuation.
     # Three lines of code.
 
-    new_wordList = []
-
-    for item in split_text.strip(string.punctuation()):
-        new_wordList.append(item)
+    textList = []
+    for item in split_text:
+        if item not in string.punctuation:
+            textList.append(item)
 
 
     # PROBLEM 5. Write a loop that sums the number of times that the
@@ -243,20 +245,27 @@ def litCricFriend(wordList, text):
     # words in wordList. Between three and five lines of code. (It
     # depends on your coding style -- various styles are OK.)
 
-    
-    lower_wordList = wordList.lower()
-    
-    lower_wordList.count()
+    count = 0
+    for word in wordList:
+        count += textList.count(word.lower())
+
 
     # PROBLEM 6. Calculate the ratio of the number from Problem 5
     # to the number of words in text. Return this ratio. Between one
     # and three lines of code. (It depends on your coding style --
     # various styles are OK.)
 
+    return (count / len(textList))
+
 # PROBLEM 7. Call litCricFriend() four times to find the frequency
 # of the indefinite articles 'a' and 'an' and the definite article
 # 'the' in the two poems above. Print out the value returned by
 # each function call, identifying what it is. For example, it might say
+
+print(litCricFriend(['a', 'an'], theBells))
+print(litCricFriend(['the'], theBells))
+print(litCricFriend(['a', 'an'], cantoXII))
+print(litCricFriend(['the'], cantoXII))
 
 # >>> bellsAAnFrequency 0.07265587064676617.
 
@@ -269,4 +278,9 @@ def litCricFriend(wordList, text):
 '''
 Put your answer to PROBLEM 8 here.
 '''
-
+'''
+The results do in fact show that they use 'a' and 'an' differently since the 'a' and 'an' 
+in cantoXII is this ratio 0.009615384615384616 and the 'a' and 'an' in theBells is this ratio 
+0.03482587064676617. For the use of 'the' it is the same case. Definitely more drastic in difference
+with theBells at 0.13598673300165837 and cantoXII at 0.05448717948717949.
+'''
