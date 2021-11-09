@@ -1,3 +1,8 @@
+'''
+Steven Kyritsis CS100 
+2021F Section 031 HW 08,
+November 5, 2021
+'''
 #1
 def two_words(length, first_letter):
     while True:

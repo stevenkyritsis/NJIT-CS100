@@ -1,5 +1,11 @@
-import random
+'''
+Steven Kyritsis CS100 
+2021F Section 031 HW 08,
+November 5, 2021
+'''
 #4
+
+import random
 
 random_num = random.randrange(0,50)
 print('I\'m thinking of a number in the range 0-50. You have five tries to guess it.')
